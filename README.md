@@ -1,2 +1,2 @@
 # NewsApp
-It contained All the Projects that I will make in React
+It is made using React and NewsAPI
