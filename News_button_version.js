@@ -26,7 +26,7 @@ export class News extends Component {
   async componentDidMount(){
     let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3254aeced75e4a16b2d58c910b69661d&page=${this.state.page}&pageSize=${this.state.pageSize}`;
     this.setState({loading:true});
-    let data= await fetch(url, {mode:'cors'});
+    let data= await fetch(url, {mode:'no-cors'});
     let parsedData= await data.json();
     this.setState({
       articles:parsedData.articles,
@@ -38,7 +38,7 @@ export class News extends Component {
     handlePreviousClick = async ()=>{
       let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3254aeced75e4a16b2d58c910b69661d&page=${this.state.page-1}&pageSize=${this.state.pageSize}`;
       this.setState({loading:true});
-      let data= await fetch(url, {mode: 'cors'});
+      let data= await fetch(url, {mode: 'no-cors'});
       let parsedData= await data.json();
       this.setState({
         page: this.state.page-1,
@@ -51,7 +51,7 @@ export class News extends Component {
     handleNextClick = async ()=>{
       let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3254aeced75e4a16b2d58c910b69661d&page=${this.state.page+1}&pageSize=${this.state.pageSize}`;
       this.setState({loading:true});
-      let data= await fetch(url, {mode: 'cors'});
+      let data= await fetch(url, {mode: 'no-cors'});
       let parsedData= await data.json();
       this.setState({
         page: this.state.page+1,
