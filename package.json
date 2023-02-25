@@ -40,6 +40,5 @@
   "description": "Below is the screenshot of NewsMonkey APP:- <img src=\"/public/SS.png\" alt=\"\">",
   "main": "News_button_version.js",
   "author": "",
-  "license": "ISC",
-  "proxy": "http://localhost:4000"
+  "license": "ISC"
 }
