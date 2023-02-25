@@ -1,2 +1,2 @@
-# NewsApp
-It is made using React and NewsAPI
+Below is the screenshot of NewsMonkey APP:-
+<img src="/public/SS.png" alt="">
